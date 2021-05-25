@@ -1,0 +1,40 @@
+body {
+	border: 2px solid #000;
+	color: var(--color-body);
+	display: grid;
+	font-family: var(--font-family-parrafo);
+	height: 95vh;
+	margin: 10px;
+	padding: 8px;
+	grid-template-columns: repeat (3, 1fr);
+	grid-template-rows: 50px 100px auto 50px;
+	grid-template-areas:
+		'header header header'
+		'section section section '
+		'article article aside'
+		'footer footer footer';
+	gap: 10px;
+}
+body p {
+	margin-left: 6px;
+}
+header {
+	background-color: var(--bg-header);
+	grid-area: header;
+}
+section {
+	background-color: var(--bg-hero);
+	grid-area: section;
+}
+main {
+	background-color: var(--bg-content);
+	grid-area: article;
+}
+aside {
+	background-color: var(--bg-aside);
+	grid-area: aside;
+}
+footer {
+	background-color: var(--bg-footer);
+	grid-area: footer;
+}
